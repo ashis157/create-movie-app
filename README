@@ -1,0 +1,31 @@
+User Story:
+===========
+As a user of a movie database application, I want to be able to search for movies by title so that I 
+can find information about movies I'm interested in.
+
+Acceptance Criteria:
+--------------------
+- When I enter a movie title into the search bar, the application should make a request to the OMDB API to fetch 
+  information about movies matching the title.  Refer to comments in the search page for further information.
+- The application should display a loading indicator while the data is being fetched.
+- Once the data is fetched successfully, the application should display a list of movies matching the search text,
+  including their title, year of release, and poster image.
+- If there are no movies found for the search query, the application should display a message indicating that 
+  no results were found.
+- The user should be able to click on a movie from the list to view more detailed information about that movie.
+  You needn't show all the details, but at minimum should show the title, release date, rating, poster (as an image),
+  runtime, genre, director, writer, actors, and plot.
+- The application should use Redux to manage the state of the fetched movie data and movie details.
+
+Additional Notes:
+-----------------
+- You can use the OMDB API (http://www.omdbapi.com/) to fetch movie data. You can use the API key e27098be or 
+  create you own via the site.
+- Focus on implementing the functionality described in the acceptance criteria using React functional components 
+  with hooks and Redux for state management.
+- I have created all the infrastructure code needed to work with redux and axios to do data retrieval, 
+  as well as created placeholder js and jsx pages that needed to be coded to complete the puzzle.
+  I have also put additional comments in the incomplete js and jsx files.  You should not need to create 
+  any new files but feel free to add whatever files for styling or anything else you need.
+- This is your chance to show me that you have a firm grasp of React; specifically hooks, Redux, 
+  and state management.  Have fun and be creative!
